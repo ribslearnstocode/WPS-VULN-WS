@@ -34,9 +34,9 @@ def website(name):
 
     e = requests.get("https://"+url+"/wp-content/uploads")
     if e.status_code==200:
-      list.append("[!] Direcotry travelsal  is enabled")
+      list.append("[!] Directory traversal  is enabled")
     else:
-        list.append("[!] Direcotry travelsal is disabled")
+        list.append("[!] Directory traversal is disabled")
 
     l = requests.get("https://"+url+"/sitemap.xml")
     if l.status_code==200:
